@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sanjana Kalarickal — Software Engineer</title>
+  <meta name="description" content="Sanjana Kalarickal is a backend engineer at UC San Diego building low-latency APIs, real-time systems and LLM pipelines.">
+  <meta name="theme-color" content="#121012">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__mark" data-link>SK</a>
+      <nav class="nav__links" aria-label="Pages">
+        <a href="#about" data-link>About</a>
+        <a href="#experience" data-link>Experience</a>
+        <a href="#projects" data-link>Projects</a>
+        <a href="#cv" data-link>CV</a>
+        <a href="#contact" data-link>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Home -->
+    <div class="tab" id="home" data-tab>
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <h1 class="hero__name">Sanjana<br><em>Kalarickal</em></h1>
+        <p class="hero__lede">
+          Backend engineer focused on speed — low-latency APIs, real-time systems,
+          and pipelines that return results in seconds, not minutes.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--pink" data-link>See my work</a>
+          <a href="#contact" class="btn btn--ghost" data-link>Contact me</a>
+          <a href="Sanjana_Kalarickal_Resume.pdf" class="btn btn--ghost" target="_blank" rel="noopener">View CV</a>
+        </div>
+      </div>
+
+      <aside class="hero__now" aria-label="Currently">
+        <p class="eyebrow">Currently</p>
+        <ul>
+          <li><span>Software Engineer Intern</span>Y STEM and Chess</li>
+          <li><span>Co-lead, AIDE</span>CSES Innovate</li>
+          <li><span>B.S. Computer Science</span>UC San Diego, Dec 2027</li>
+        </ul>
+        <p class="hero__open"><i></i>Open to software engineering roles · San Francisco or relocating · Will need visa sponsorship</p>
+      </aside>
+    </section>
+
+    <section class="favs">
+      <div class="container">
+        <div class="favs__head">
+          <div>
+            <p class="eyebrow">Favorite projects</p>
+            <h2 class="favs__title">Selected work</h2>
+          </div>
+          <a href="#projects" class="favs__all" data-link>All projects →</a>
+        </div>
+        <!-- Filled from the Projects tab: any card marked data-fav shows up here -->
+        <div class="cards cards--three" id="fav-cards"></div>
+      </div>
+    </section>
+    </div>
+
+    <!-- About -->
+    <section class="tab page" id="about" data-tab hidden>
+      <div class="container">
+        <div class="about">
+          <div class="about__body">
+            <h2 class="about__name">Sanjana<br><em>Kalarickal</em></h2>
+            <p class="about__lead">
+              I'm a backend engineer. I build services that stay fast and correct under real load —
+              and I measure both.
+            </p>
+            <p>
+              Most of my work lives between the database and the user: REST and WebSocket APIs in Node.js
+              and FastAPI, data models in Postgres and MongoDB, and the caching, concurrency and model-loading
+              decisions that decide whether a response takes 200 milliseconds or 20 seconds. I profile before
+              I optimize, parallelize anything that's independent, and keep expensive work off the hot path.
+            </p>
+            <p>
+              I care just as much about correctness at the edges: idempotent writes, safe retries,
+              duplicate-proof flows, and test suites that catch regressions before users do. Lately that
+              includes production LLM systems — retrieval, vector search and agent pipelines with real
+              guardrails around them.
+            </p>
+          </div>
+        </div>
+
+        <h3 class="sub">Education</h3>
+        <div>
+          <div class="panel">
+            <p class="panel__strong">University of California, San Diego</p>
+            <p class="muted">B.S. Computer Science · Graduating December 2027</p>
+            <ul class="chips">
+              <li>Advanced Software Engineering</li>
+              <li>Software Engineering with GenAI</li>
+              <li>Database Principles</li>
+              <li>Algorithms</li>
+              <li>Statistical NLP</li>
+              <li>Recommender Systems &amp; Web Mining</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 class="sub">Skills</h3>
+        <div class="skills">
+          <div class="skill"><h4>Languages</h4><p>Java, Python, TypeScript, JavaScript, SQL</p></div>
+          <div class="skill"><h4>Frontend</h4><p>React, Tailwind CSS, Electron</p></div>
+          <div class="skill"><h4>Backend</h4><p>Node.js, Express, FastAPI, REST APIs, PostgreSQL, Supabase, MongoDB, SQLite</p></div>
+          <div class="skill"><h4>Cloud &amp; Tools</h4><p>AWS, Vercel, Docker, CI/CD, Git</p></div>
+          <div class="skill"><h4>Testing</h4><p>pytest, Vitest, JUnit, Agile / Scrum</p></div>
+          <div class="skill"><h4>AI &amp; Data</h4><p>PyTorch, Hugging Face, LangGraph, NLP, vector databases, search &amp; retrieval (FAISS)</p></div>
+        </div>
+
+        <h3 class="sub">Leadership</h3>
+        <ul class="leaders">
+          <li>
+            <h4>Technical Manager &amp; Tutor, BoB</h4>
+            <p>Led 150+ hours of game development sessions for younger students.</p>
+          </li>
+          <li>
+            <h4>Team Lead, CSE 110</h4>
+            <p>Ran an 11-person team through five sprints, designed the Git workflow and project structure, and approved 40+ pull requests. Won <strong>Best Agile Workflow</strong> out of 50 teams.</p>
+          </li>
+          <li>
+            <h4>Founder &amp; President, Girls Who Code</h4>
+            <p>Started and grew a chapter to 50+ members, running 100+ hours of workshops and hackathons.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="tab page" id="experience" data-tab hidden>
+      <div class="container">
+        <h2 class="page__title">Experience</h2>
+
+        <ol class="journey">
+          <li class="xp">
+            <header class="xp__head">
+              <div>
+                <h3 class="xp__org">Y STEM and Chess</h3>
+                <p class="xp__role">Software Engineer Intern</p>
+              </div>
+              <span class="xp__date">Jun 2026 — Now</span>
+            </header>
+            <p class="tags"><span>React</span><span>Node.js</span><span>MongoDB</span><span>Socket.io</span><span>Agora</span></p>
+            <p class="xp__story">
+              Y STEM runs an online chess school for students. I built the real-time puzzle trainer on Socket.io: the server
+              pushes randomized puzzles to everyone in a lesson or competition, and an LLM tutor gets the live board state as
+              context. I also ported mentor–student video sessions from Angular to React on Agora (picture-in-picture,
+              screen share, per-student recordings) and split an 809-line signup component into six independently tested units.
+            </p>
+            <ul class="stats">
+              <li><b>10% → 87%</b><span>signup test coverage</span></li>
+              <li><b>6</b><span>clean components from one 809-line file</span></li>
+            </ul>
+            <button class="xp__more" type="button">Behind the commits <span aria-hidden="true">→</span></button>
+          </li>
+
+          <li class="xp">
+            <header class="xp__head">
+              <div>
+                <h3 class="xp__org">CSES Innovate</h3>
+                <p class="xp__role">Co-Team Lead &amp; Developer · AIDE</p>
+              </div>
+              <span class="xp__date">Aug 2025 — Now</span>
+            </header>
+            <p class="tags"><span>Python</span><span>FastAPI</span><span>TypeScript</span><span>Electron</span><span>Hugging Face</span></p>
+            <p class="xp__story">
+              AIDE lets students write code by speaking to VS Code. Audio runs through a speech → intent → code-generation
+              pipeline of three fine-tuned Hugging Face models, served locally behind FastAPI. Preloading the models and keeping
+              inference warm took end-to-end latency from minutes to seconds on CPU alone, with no GPU and no cloud API.
+              Transcripts are validated before anything executes, low-confidence requests are re-prompted, and unresolved ones
+              escalate to a chat-assistant fallback. We're now writing a paper on software architecture recovery.
+            </p>
+            <ul class="stats">
+              <li><b>3–5 min → 2–5 s</b><span>from speaking to seeing code</span></li>
+              <li><b>98.8%</b><span>accuracy on 500+ unseen requests</span></li>
+              <li><b>96%</b><span>success in a live demo for 200+ people</span></li>
+            </ul>
+            <button class="xp__more" type="button">Behind the commits <span aria-hidden="true">→</span></button>
+          </li>
+
+          <li class="xp">
+            <header class="xp__head">
+              <div>
+                <h3 class="xp__org">Brainworks Academy</h3>
+                <p class="xp__role">Full-Stack Engineer Intern</p>
+              </div>
+              <span class="xp__date">Mar — May 2026</span>
+            </header>
+            <p class="tags"><span>React</span><span>TypeScript</span><span>Express</span><span>PostgreSQL</span><span>Supabase</span><span>Stripe</span></p>
+            <p class="xp__story">
+              Brainworks sells online courses, and I owned the payment path. Checkout uses Stripe's Payment Element with
+              idempotency keys, so a retried request can never create a second charge. Webhooks are processed asynchronously
+              with timeouts and de-duplication, so late or repeated events can't corrupt order state. Registration is
+              duplicate-safe at the database level, validated with Zod and covered by Vitest.
+            </p>
+            <ul class="stats">
+              <li><b>55</b><span>live orders processed</span></li>
+              <li><b>0</b><span>double-charges</span></li>
+              <li><b>95%</b><span>sign-up test coverage</span></li>
+            </ul>
+            <button class="xp__more" type="button">Behind the commits <span aria-hidden="true">→</span></button>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="tab page" id="projects" data-tab hidden>
+      <div class="container">
+        <p class="eyebrow">Things I've built</p>
+        <h2 class="page__title">Projects</h2>
+        <p class="page__note">Click a project to see the details.</p>
+
+        <div class="cards">
+
+          <article class="card card--wide" data-fav>
+            <button class="card__btn" aria-haspopup="dialog">
+              <span class="card__badge">Featured</span>
+              <span class="card__name">LitSynth</span>
+              <span class="card__line">Turns one research question into a cited, fact-checked literature review.</span>
+              <span class="tags"><span>Python</span><span>LangGraph</span><span>LangChain</span><span>SQLite</span><span>Docker</span></span>
+              <span class="card__arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="card__detail" hidden>
+              <p>
+                An autonomous research agent. It breaks a question into sub-queries, searches arXiv, Semantic Scholar, DBLP and
+                Crossref in parallel, extracts the claims each paper makes, and detects where sources contradict each other.
+                It's built as a checkpointed LangGraph state machine that fans out retrieval, extraction and contradiction checks
+                across workers, which cut a full synthesis from 6.5 minutes to about 70 seconds. A writer/critic loop retracts any
+                claim that fails a citation whitelist, and cost accounting stays thread-safe across parallel runs.
+              </p>
+              <a href="https://github.com/sanjana1976/LitAgent_Phase2" target="_blank" rel="noopener">View on GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="card" data-fav>
+            <button class="card__btn" aria-haspopup="dialog">
+              <span class="card__name">Downstream</span>
+              <span class="card__line">Pull-request impact analysis for TypeScript monorepos.</span>
+              <span class="tags"><span>TypeScript</span><span>Node.js</span><span>Zod</span><span>CI</span></span>
+              <span class="card__arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="card__detail" hidden>
+              <p>
+                Given a commit and its changed files, Downstream builds the module dependency graph and walks reverse import edges
+                to find everything a pull request can affect, who should review it, and where the risk is. It parses with
+                oxc-parser and resolves imports itself (tsconfig paths, workspaces, package exports) with zero I/O in the core,
+                storing edges in compact CSR arrays. It's validated against 12 golden fixtures, with 100% agreement with the
+                TypeScript compiler's own resolver enforced in CI.
+              </p>
+              <a href="https://github.com/sanjana1976/PR_Check" target="_blank" rel="noopener">View on GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="card" data-fav>
+            <button class="card__btn" aria-haspopup="dialog">
+              <span class="card__name">Menu Buddy</span>
+              <span class="card__line">Photograph a menu in any language and get every dish explained.</span>
+              <span class="tags"><span>React</span><span>TypeScript</span><span>Express</span><span>OpenAI</span></span>
+              <span class="card__arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="card__detail" hidden>
+              <p>
+                A React + Express app that runs menu photos through a vision-model extraction pipeline with a strict JSON schema,
+                returning translated dish names, descriptions, cuisine context and likely allergens. Results are cached by image
+                hash, so repeat scans are instant and cost nothing, and the API adds request IDs, upload validation, timeouts and
+                rate limiting. Your ratings feed a lightweight preference model that predicts which dishes you'll like.
+              </p>
+              <a href="https://github.com/sanjana1976/menu-translator" target="_blank" rel="noopener">View on GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <button class="card__btn" aria-haspopup="dialog">
+              <span class="card__name">Student Clock</span>
+              <span class="card__line">A desktop planner that shows students whether they're on pace.</span>
+              <span class="tags"><span>Java</span><span>JavaFX</span><span>SQLite</span><span>JUnit</span></span>
+              <span class="card__arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="card__detail" hidden>
+              <p>
+                A JavaFX app built by a six-person team: courses, assignment series with shared late policies, work logging, and a
+                dashboard that ranks work by urgency against your weekly study-hour budget. It uses a Model–View–Presenter
+                architecture over SQLite, with JUnit for the logic and TestFX for the UI. The second milestone was a dedicated
+                tech-debt pass that restructured the codebase without changing behavior.
+              </p>
+              <a href="https://github.com/sanjana1976/student-clock-team-16" target="_blank" rel="noopener">View on GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <button class="card__btn" aria-haspopup="dialog">
+              <span class="card__name">Smart Document Search</span>
+              <span class="card__line">Two-stage retrieval that finds the right transcript for any question.</span>
+              <span class="tags"><span>Python</span><span>PyTorch</span><span>FAISS</span><span>Hugging Face</span></span>
+              <span class="card__arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="card__detail" hidden>
+              <p>
+                A retrieval pipeline over long meeting transcripts. Documents are chunked, embedded with gte-small and indexed in
+                FAISS for a fast bi-encoder shortlist, then re-ranked with ColBERT-style token-level scoring on BERT to recover
+                matches that pooled embeddings miss. A second track implements beam search over GPT-2 with custom score processors
+                that block repeated n-grams.
+              </p>
+              <a href="https://github.com/sanjana1976/RAG-pipeline" target="_blank" rel="noopener">View on GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <button class="card__btn" aria-haspopup="dialog">
+              <span class="card__name">Hacker News Monitor</span>
+              <span class="card__line">A cost-aware classifier for the Hacker News firehose.</span>
+              <span class="tags"><span>Python</span><span>REST APIs</span><span>Embeddings</span></span>
+              <span class="card__arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="card__detail" hidden>
+              <p>
+                Polls Hacker News in near-real time and surfaces only the posts that are genuinely about AI/ML. A three-layer
+                cascade (keyword gate, then embedding similarity, then an LLM classifier) means the expensive call only runs on
+                posts that survive the cheap filters. It ships with a labeled evaluation set that reports precision, recall and
+                cost for each configuration.
+              </p>
+              <a href="https://github.com/sanjana1976/job-tracker" target="_blank" rel="noopener">View on GitHub ↗</a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="page__more">More on <a href="https://github.com/sanjana1976" target="_blank" rel="noopener">GitHub ↗</a></p>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section class="tab page page--center" id="cv" data-tab hidden>
+      <div class="container cv">
+        <p class="eyebrow">CV</p>
+        <h2 class="page__title">My résumé</h2>
+        <p class="muted">The one-page version of everything on this site.</p>
+        <div class="cv__actions">
+          <a href="Sanjana_Kalarickal_Resume.pdf" class="btn btn--pink" target="_blank" rel="noopener">Open résumé (PDF)</a>
+          <a href="Sanjana_Kalarickal_Resume.pdf" class="btn btn--ghost" download>Download</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="tab page page--center" id="contact" data-tab hidden>
+      <div class="container contact">
+        <p class="eyebrow">Contact</p>
+        <h2 class="page__title">Get in touch</h2>
+        <p class="contact__text">
+          I'm looking for software engineering roles starting summer 2027. If you're hiring or just want to talk shop,
+          my inbox is open.
+        </p>
+        <a href="mailto:skalarickal@ucsd.edu" class="contact__email">skalarickal@ucsd.edu</a>
+        <ul class="contact__links">
+          <li><a href="https://github.com/sanjana1976" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/s1976" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="#cv" data-link>Résumé</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Sanjana Kalarickal</p>
+  </footer>
+
+  <dialog class="modal" id="project-modal" aria-labelledby="modal-title">
+    <button class="modal__close" aria-label="Close">×</button>
+    <h3 class="modal__title" id="modal-title"></h3>
+    <div class="modal__tags tags"></div>
+    <div class="modal__body"></div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
